@@ -1,0 +1,55 @@
+print('Semana No.11: Ejercicio 1')
+n= int(input('Ingrese un numero mayor a 0'))
+if (n<=0):
+    print('Error, debe ser mayor a cero')
+
+#Definicion de variables
+    
+a=0
+b=1
+c=0
+i=2
+resultado=''
+
+#While
+
+if (n>0):
+    resultado=str(a)
+    if (n>1):
+        resultado +=','+str(b)
+
+    while(i<n):
+        c=a+b
+        resultado += ','+str(c)
+        a=b
+        b=c
+        i=i+1
+
+        print('Adentro ciclo:', resultado)
+
+else:
+     print(resultado)
+
+#For
+print('Semana No.11: Ejercicio ')
+n2= int(input('Ingrese un numero mayor a 0'))
+if (n2<=0):
+    print('Error, debe ser mayor a cero')
+#inciso a
+resultadoa= 0
+
+for x in range(1,n2+1):
+    resultadoa +=1/x
+print('Inciso A:',resultadoa)
+#inciso b
+
+resultadob= 0
+for x  in range(1,n2+1):
+    resultadob += 1/2**x
+print('Inciso b:', resultadob)
+
+#inciso c
+
+x=int(input('Ingrese un numero enter:'))
+a=int(input('Ingrese un numero enter:'))
+n=int(input('Ingrese un numero enter:'))

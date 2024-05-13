@@ -1,0 +1,15 @@
+print("David")
+
+tiempo1= input("ingrese primer tiempo")
+tiempo2= input("ingrese segundo tiempo")
+tiempo3= input("ingrese tercer tiempo")
+tiempo4= input("ingrese cuarto tiempo")
+
+tiempo1= int(tiempo1)
+tiempo2= int(tiempo1)
+tiempo3= int(tiempo1)
+tiempo4= int(tiempo1)
+suma= tiempo1+tiempo2+tiempo3+tiempo4
+division= suma/400
+
+print("el resultado es ", division)

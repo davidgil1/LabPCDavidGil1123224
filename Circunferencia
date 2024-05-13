@@ -1,0 +1,12 @@
+print("David")
+import math
+radio =input("Ingrese el radio de la circunfrencia")
+radio =float(radio)
+
+area= math.pi*radio**2
+print("el resultado es" , area)
+print (f"el area es :{area: .2f}")
+
+perimetro= 2*math.pi*radio
+print("el resultado es" , perimetro)
+print (f"el perimetro es :{perimetro: .2f}")

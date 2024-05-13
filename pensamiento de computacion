@@ -1,0 +1,9 @@
+edad = int(input('Ingrese un numero: '))
+
+if edad <0 or edad > 120:
+    print('edad no valida')
+else:
+    if edad>=18:
+        print('la persona es mayor de edad')
+    else: 
+        print('La persona es menor de edad')  

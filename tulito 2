@@ -1,0 +1,35 @@
+import random 
+Jugador1= input('Ingrese nombre del jugaro 1:')
+jugador2= input('Ingrese nombre del jugador 2:')
+secreto= random.randint(1,100)
+ganador= False
+intentos=0
+intentos1=0
+intentos2=0
+
+while not ganador:
+    ingresado= int(input('Ingrese un numero del (1-100)'))
+    intentos+=1
+    if (intentos%2==0):
+        intentos2=intentos2+1
+    else:
+        intentos1=intentos1+1
+    if ingresado== secreto:
+        print('Ganaste!! adivinaste el numero')
+        ganador= True
+
+        if(intentos%2==0):
+            print('El ganador es'+ jugador2)
+            print('Tomo'+ str(intentos2)+ 'intentos')
+        else:
+            print('El ganador es'+Jugador1)
+            print('Tomo'+ str(intentos1)+ 'intentos')
+
+        print('Tomo:'+str(intentos)+'-intentos')
+    else:
+        print('Sigue intentando')
+        if ingresado>secreto: 
+            print('El numero es menor')
+        else:
+            print('El numero es mayor')
+
